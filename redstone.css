@@ -1,0 +1,140 @@
+/* Initialisation de l'image du background */
+body{
+    background-image: url(image/iron-block.png);
+}
+body a{
+    text-decoration: none; 
+}
+/* Initialisation des marges */
+.margeGauche{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%; /* Ajustez la hauteur selon vos besoins */
+    width: 5%;
+    background-image: url(image/redstone-block.png);
+}
+
+.margeDroite {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%; /* Ajustez la hauteur selon vos besoins */
+    width: 5%;
+    background-image: url(image/redstone-block.png);
+    transform: scaleX(-1);
+}
+
+.reduire{
+    margin-right: 5%;
+}
+/* Paramètres du titre */
+header h1{
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+    width: 95%;
+    color: yellowgreen;
+}
+
+header p{
+    margin-left: 7%;
+    margin-bottom: 2%;
+}
+/* Police du texte et des liens */
+p {
+    font-family: sans-serif;
+}
+
+a {
+    font-family: sans-serif;
+}
+/* Paramètres du menu */
+.menu{
+    display: flex;       
+    justify-content: space-around;      
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+
+.menu a {
+    display:block;
+}
+/* Paramètres des images à droite des liens du menu */
+.menu img{
+    width: 10%;
+    margin-left: 5%
+}
+/* couleur des liens du menu */
+.build{
+    color: blue;
+}
+
+.redstone{
+    color: red;
+}
+
+.pvp{
+    color: saddlebrown;
+}
+/* paramètres de la partie principale du site avec le positionnement des éléments */
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.description{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;  
+}
+
+.description p{
+    margin-right: 10%;
+    margin-left: 10%;
+    font-style: italic;
+}
+.imageF_1{
+    display: flex;
+    width: 100%;
+    margin-top: 7%;
+    justify-content: center;
+}
+
+.imageF_1 img{
+    width: 35%;
+}
+
+.paraF_2{
+    width: 100%;
+}
+
+.paraF_2 p{
+    margin-left: 7%;
+}
+/* paramètre du footer */
+footer p{
+    display: flex;
+    margin-top: 15%;
+    justify-content: center;
+}
+/* modifications SI l'écran de l'utilisateur et de 1024 pixel ou moins */
+@media screen and (max-width: 1024px){
+    .menu{
+        display: flex;       
+        justify-content: space-around;      
+        margin-bottom: 5%;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+}
+/* modifications SI l'écran de l'utilisateur et de 480 pixels ou moins */
+@media screen and (max-device-width: 480px){
+    .menu{
+        display: flex;       
+        justify-content: space-around;      
+        margin-bottom: 5%;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+}
